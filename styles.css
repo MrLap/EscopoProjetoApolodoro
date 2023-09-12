@@ -18,6 +18,59 @@ header {
     padding: 20px;
 }
 
+/* Estilização do menu de navegação */
+.menu ul {
+    list-style: none;
+    padding: 33px;
+    margin: 0;
+    margin-left: 53px;
+    display: flex;
+    justify-content: center; /* Espaço entre os menus */
+}
+
+.menu-esquerdo li,
+.menu-direito li {
+    display: inline;
+    margin-right: 60px; /* Espaçamento entre os itens do menu */
+}
+
+.menu-esquerdo a,
+.menu-direito a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transição de cor suave ao passar o mouse */
+    padding: 10px 20px; /* Espaçamento interno para criar botões */
+    border: 2px solid #39808b; /* Borda para criar botões */
+    border-radius: 5px; /* Cantos arredondados para criar botões */
+    color: #333; /* Cor do texto do link */
+    background-color: #39808b;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.menu-esquerdo a:hover,
+.menu-direito a:hover {
+    color: white; /* Cor do texto do link ao passar o mouse */
+}
+
+/* Estilização dos botões "Ver no YouTube" */
+.video a {
+    display: inline-block;
+    font-weight: bold;
+    background-color: #39808b;
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2);
+    
+}
+
+.video a:hover {
+    background-color: #555;
+}
+
 header h1 {
     font-size: 36px;
 }
@@ -39,8 +92,9 @@ main {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     flex-basis: calc(50% - 20px);
+    
 }
 
 .video img {
@@ -55,20 +109,6 @@ main {
 
 .video p {
     color: #777;
-}
-
-.video a {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.video a:hover {
-    background-color: #555;
 }
 
 footer {
